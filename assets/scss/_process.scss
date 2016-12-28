@@ -1,0 +1,137 @@
+.process-wrap {
+  background: $white;
+}
+.process-content {
+  background: $white;
+  position: relative;
+  .glide__wrapper {
+    position: relative;
+    width: 50vw;
+    overflow: hidden;
+  }
+  .process-section {
+    width: 100%;
+    height: 50vw;
+    &:nth-child(even) {
+      background: $black;
+      .glide__slide p, h3{
+        color: $white;
+        font-weight: 200;
+      }
+      .process-section .thumb-wrap .process-thumb.thumb {
+        margin-left: 10%;
+      }
+    }
+    .process-slide {
+       height: 100%;
+      .glide-contain {
+        overflow:hidden;
+        width:50vw;
+      }
+
+      .slide-title {
+        margin-left:20%;
+        margin-top:7vw;
+      }
+      h3{
+        letter-spacing: .05em;
+        margin-bottom: 3px;
+      }
+      p {
+        font-size: .9em;
+      }
+      .scroll {
+        position: absolute;
+        bottom: -25px;
+        right: 25vw;
+        display: block;
+      }
+
+    }
+    .thumb-wrap {
+      height: inherit;
+      .process-thumb {
+        height: 50vw;
+        position: relative;
+        &.thumb {
+          background:url("../img/background3.jpg");
+          background-size: cover;
+          width: 85%;
+          height: 40vw;
+          display: block;
+          &.two {
+            margin-left:15%;
+            background:url("../img/background4.jpg");
+            background-size: cover;
+          }
+          &.three {
+            background:url("../img/background5.jpg");
+            background-size: cover;
+
+          }
+          @include vertical-align;
+          -webkit-box-shadow: 0px 0px 36px 1px rgba(0,0,0,0.31);
+          -moz-box-shadow: 0px 0px 36px 1px rgba(0,0,0,0.31);
+          box-shadow: 0px 0px 36px 1px rgba(0,0,0,0.31);
+        }
+      }
+    }
+  }
+  .process-nav {
+    position: absolute;
+    height: 90%;
+    width: 2px;
+    border: 2px solid #D18916;
+    left: 50vw;
+    top: 5%;
+    &::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background:url("../img/embelish_cap-vert.png") no-repeat;
+    background-size: 40px 40px;
+    display: inline-block;
+    position: absolute;
+    left:-20px;
+    top:-35px;
+    }
+    &::after {
+      content: "";
+      width: 40px;
+      height: 40px;
+      background:url("../img/embelish_cap-vert.png") no-repeat;
+      background-size: 40px 40px;
+      -ms-transform: rotate(180deg);
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg);
+      display: inline-block;
+      position: absolute;
+      right:-20px;
+      bottom:-35px;
+    }
+    /*.indicator-wrap {
+      height: 33.3%;
+      position: relative;
+      width: 2px;
+      .indicator {
+        width: 30px;
+        height: 30px;
+        border-radius: 20px;
+        background: $red;
+        display: block;
+        transform:translateX(-15px);
+        position: absolute;
+        &.one {
+          top: 25%;
+        }
+        &.two {
+          top: 50%;
+        }
+        &.three {
+          top: 75%;
+        }
+      }
+    }*/
+
+  }
+}

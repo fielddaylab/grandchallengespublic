@@ -1,0 +1,77 @@
+/* Buttons
+------------------------------------------ */
+
+.button {
+  display: inline-block;
+  padding: 15px 36px;
+  font-size: 1.1em;
+  line-height: 1.2em;
+  border: 3px solid $black;
+  text-transform: uppercase;
+  letter-spacing: .15em;
+  color: $black;
+  font-weight: 400;
+  background: transparent;
+  box-shadow: none;
+  border-radius: 99px;
+  text-align: center;
+  text-decoration: none;
+  margin-right:15px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  @media #{$break-md} {
+    padding: 12px 30px;
+  }
+  &:hover { cursor: pointer; text-decoration: none; }
+  &:active, &:visited, &:focus { text-decoration: none; outline: none; }
+  &:hover, &.filled {
+    background: $black; color: #fff;
+    i { color: #fff; }
+  }
+  &:focus { outline: none !important; box-shadow: none !important; -webkit-appearance: none !important; text-decoration: none; }
+  &.gold {
+    color: $gold; border-color: $gold; background: transparent;
+    i { color: $gold; }
+    &:hover, &.filled {
+      background: $gold; color: #fff;
+      i { color: #fff; }
+    }
+  }
+  &.red {
+    color: $red; border-color: $red; background: transparent;
+    i { color: $red; }
+    &:hover, &.filled {
+      background: $red; color: #fff;
+      i { color: #fff; }
+    }
+  }
+  &.light-red {
+    color: $light_red; border-color: $light_red; background: transparent;
+    i { color: $light_red; }
+    &:hover, &.filled {
+      background: $light_red; color: #fff;
+      i { color: #fff; }
+    }
+  }
+  &.disabled {
+    color: $light_gray; border-color: $light_gray; background: transparent;
+    i { color: $light_gray; }
+    &.filled {
+      background: $light_gray; color: #fff;
+      i { color: #fff; }
+    }
+  }
+  &.white {
+    color: #fff; border-color: #fff; background: transparent;
+    i { color: #fff; }
+    &:hover, &.filled {
+      background: #fff; color: $black !important;
+      i { color: $black; }
+    }
+  }
+  &.small { min-width: auto; font-size: 11px; padding: 13px 20px; }
+  &.xsmall { min-width: auto; font-size: 10px; padding: 10px 15px; }
+  &.full-width { text-align: center; }
+  &.round { border-radius: 30px; }
+  &[disabled='disabled'] { opacity: 0.5; cursor: not-allowed; }
+}

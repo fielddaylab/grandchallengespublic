@@ -1,0 +1,62 @@
+/* Layout
+------------------------------------------ */
+
+.embelishment {
+  width: 100%;
+  background: $gold;
+  height: 3px;
+  display: inline-block;
+  position: relative;
+  margin:3vw 0vw;
+  &::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background:url("../img/embelish_cap-horiz.png") no-repeat;
+    background-size: 40px 40px;
+    display: inline-block;
+    position: absolute;
+    left:-38px;
+    top:-19px;
+  }
+  &::after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background:url("../img/embelish_cap-horiz.png") no-repeat;
+    background-size: 40px 40px;
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    display: inline-block;
+    position: absolute;
+    right:-38px;
+    top:-20px;
+  }
+}
+
+/*-- Utility & overrides-- */
+.full-width {
+  margin-right: 0px;
+  margin-left: 0px;
+  padding-right: 0px;
+  padding-left: 0px;
+  .col {
+    padding: 0px;
+    margin: 0px;
+  }
+}
+
+.centered {
+  text-align: center;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    overflow: hidden;
+}
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; } /* IE < 8 */
