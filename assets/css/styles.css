@@ -2632,7 +2632,7 @@ p, a, li {
     .glide__bullets > *:nth-child(3) {
       top: 70%; }
     .glide--horizontal .glide__bullets > * {
-      margin: 0 5px; }
+      margin: 0 8px; }
     .glide--vertical .glide__bullets > * {
       vertical-align: middle; }
     .glide__bullets > *.active {
@@ -2664,6 +2664,8 @@ p, a, li {
       .process-content .process-section:nth-child(even) .glide__slide p, .process-content .process-section:nth-child(even) h3 {
         color: #FFFFFF;
         font-weight: 200; }
+      .process-content .process-section:nth-child(even) .glide__bullets > * {
+        margin: 0px 12px !important; }
       .process-content .process-section:nth-child(even) .process-section .thumb-wrap .process-thumb.thumb {
         margin-left: 10%; }
     .process-content .process-section .process-slide {

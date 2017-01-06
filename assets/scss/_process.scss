@@ -18,6 +18,9 @@
         color: $white;
         font-weight: 200;
       }
+      .glide__bullets > * {
+            margin: 0px 12px !important;
+      }
       .process-section .thumb-wrap .process-thumb.thumb {
         margin-left: 10%;
       }
