@@ -2042,6 +2042,8 @@ p, a, li {
   border-bottom: 1px solid #DDDDDD;
   overflow: hidden;
   animation: navDrop .4s forwards; }
+  .subnav .navitems, .mainnav .navitems {
+    margin-left: 370px; }
   .subnav .get-involved, .mainnav .get-involved {
     margin-right: 0px;
     margin-top: -4px;
@@ -2049,8 +2051,10 @@ p, a, li {
     right: 10px;
     display: none; }
   .subnav .navlogo, .mainnav .navlogo {
-    width: 250px;
-    height: auto; }
+    width: 350px;
+    height: auto;
+    margin-top: -20px;
+    position: absolute; }
   .subnav a, .mainnav a {
     display: inline-block;
     color: #222830;
@@ -2687,6 +2691,13 @@ p, a, li {
         margin-left: 10%; }
     .process-content .process-section .process-slide {
       height: 100%; }
+      .process-content .process-section .process-slide .singleitem {
+        font-size: .9em;
+        color: #fff;
+        width: 27vw;
+        margin-left: 10w;
+        display: inline-block;
+        margin-left: 10vw; }
       .process-content .process-section .process-slide .glide-contain {
         overflow: hidden;
         width: 50vw; }

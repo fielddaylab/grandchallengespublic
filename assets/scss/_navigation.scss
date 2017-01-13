@@ -94,6 +94,9 @@
   border-bottom: 1px solid $light_gray;
   overflow: hidden;
   animation: navDrop .4s forwards;
+  .navitems {
+    margin-left:370px;
+  }
   .get-involved {
     margin-right: 0px;
     margin-top: -4px;
@@ -102,8 +105,10 @@
      display: none;
   }
   .navlogo {
-    width:250px;
+    width: 350px;
     height: auto;
+    margin-top: -20px;
+    position: absolute;
   }
   a {
     display: inline-block;
