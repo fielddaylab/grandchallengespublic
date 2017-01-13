@@ -2343,6 +2343,28 @@ p, a, li {
   background-size: 50px 50px;
   display: inline-block; }
 
+.fancy-city {
+  width: 50px;
+  margin: 10px; }
+
+.lets-ask {
+  margin: 4px; }
+
+.big-questions {
+  margin: 0; }
+
+.what-if {
+  position: relative; }
+
+.what-if-gradient {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to bottom, white 5%, transparent 20%, transparent 80%, white 95%); }
+
 .answers-outer {
   width: 100%;
   position: relative;
@@ -2652,6 +2674,8 @@ p, a, li {
       top: 50%; }
     .glide__bullets > *:nth-child(3) {
       top: 70%; }
+    .glide__bullets > *:nth-child(4) {
+      top: 90%; }
     .glide--horizontal .glide__bullets > * {
       margin: 0 8px; }
     .glide--vertical .glide__bullets > * {

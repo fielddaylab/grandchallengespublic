@@ -68,6 +68,33 @@
   display:inline-block;
 }
 
+.fancy-city {
+  width: 50px;
+  margin: 10px;
+}
+
+.lets-ask {
+  margin: 4px;
+}
+
+.big-questions {
+  margin: 0;
+}
+
+.what-if {
+  position: relative;
+}
+
+.what-if-gradient {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to bottom, white 5%, rgba(0,0,0,0) 20%, rgba(0,0,0,0) 80%, white 95%);
+}
+
 .answers-outer {
     width: 100%;
     position: relative;
