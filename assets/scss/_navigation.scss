@@ -84,18 +84,17 @@
   img { width: 25px; }
 }
 
-.subnav {
+.subnav, .mainnav {
   height: 70px;
   width: 100%;
   background: #fff;
   padding: 20px;
-  display: block;
   display: none;
   bottom:0px;
   border-bottom: 1px solid $light_gray;
   overflow: hidden;
   animation: navDrop .4s forwards;
-  .join-yard {
+  .get-involved {
     margin-right: 0px;
     margin-top: -4px;
     position: absolute;
@@ -125,7 +124,7 @@
     transition:translateY(-90px);
     animation: navDrop .4s forwards;
     z-index:1000;
-    .join-yard {
+    .get-involved {
       display: inline-block;
     }
     .darklogo {
@@ -133,6 +132,13 @@
       transition: all .4s ease-in-out;
     }
   }
+}
+
+.mainnav{
+  display: block;
+  background:transparent;
+  border-bottom:none;
+  padding: 20px 20px 0px 20px;
 }
 
 @keyframes navDrop {

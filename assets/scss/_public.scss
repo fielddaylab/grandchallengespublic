@@ -1,3 +1,17 @@
+.uwheader {
+  width: 100%;
+  padding: 10px;
+  display:block;
+  background: $red;
+  text-align: center;
+  img {
+    width: 200px;
+    height: auto;
+    margin: 0 auto;
+    display: inline-block;
+  }
+}
+
 .mainwrapper {
   background: $black url(../img/grain.png) repeat;
   position: relative;

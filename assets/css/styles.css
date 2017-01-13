@@ -2032,27 +2032,26 @@ p, a, li {
   .menu-x img {
     width: 25px; }
 
-.subnav {
+.subnav, .mainnav {
   height: 70px;
   width: 100%;
   background: #fff;
   padding: 20px;
-  display: block;
   display: none;
   bottom: 0px;
   border-bottom: 1px solid #DDDDDD;
   overflow: hidden;
   animation: navDrop .4s forwards; }
-  .subnav .join-yard {
+  .subnav .get-involved, .mainnav .get-involved {
     margin-right: 0px;
     margin-top: -4px;
     position: absolute;
     right: 10px;
     display: none; }
-  .subnav .navlogo {
+  .subnav .navlogo, .mainnav .navlogo {
     width: 250px;
     height: auto; }
-  .subnav a {
+  .subnav a, .mainnav a {
     display: inline-block;
     color: #222830;
     margin: 0px 30px;
@@ -2060,7 +2059,7 @@ p, a, li {
     font-size: .8em;
     font-weight: 500;
     letter-spacing: .2em; }
-  .subnav.nav-fixed {
+  .subnav.nav-fixed, .mainnav.nav-fixed {
     position: fixed;
     display: block;
     top: -90px;
@@ -2069,11 +2068,17 @@ p, a, li {
     transition: translateY(-90px);
     animation: navDrop .4s forwards;
     z-index: 1000; }
-    .subnav.nav-fixed .join-yard {
+    .subnav.nav-fixed .get-involved, .mainnav.nav-fixed .get-involved {
       display: inline-block; }
-    .subnav.nav-fixed .darklogo {
+    .subnav.nav-fixed .darklogo, .mainnav.nav-fixed .darklogo {
       transform: translateX(0px);
       transition: all .4s ease-in-out; }
+
+.mainnav {
+  display: block;
+  background: transparent;
+  border-bottom: none;
+  padding: 20px 20px 0px 20px; }
 
 @keyframes navDrop {
   from {
@@ -2272,6 +2277,18 @@ p, a, li {
   zoom: 1; }
 
 /* IE < 8 */
+.uwheader {
+  width: 100%;
+  padding: 10px;
+  display: block;
+  background: #BD240F;
+  text-align: center; }
+  .uwheader img {
+    width: 200px;
+    height: auto;
+    margin: 0 auto;
+    display: inline-block; }
+
 .mainwrapper {
   background: #222830 url(../img/grain.png) repeat;
   position: relative;
@@ -2425,7 +2442,7 @@ p, a, li {
     background-size: contain;
     position: absolute;
     background-repeat: no-repeat;
-    padding: 2vw;
+    padding: 1vw 2vw 2vw 2vw;
     z-index: 100; }
   .hero .hero-bg {
     background: url("../img/hero.jpg");
