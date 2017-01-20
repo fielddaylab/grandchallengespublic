@@ -2693,6 +2693,9 @@ p, a, li {
     .glide__bullets > *:hover, .glide__bullets > *:focus {
       border: 4px solid #FFFFFF; }
 
+.glide__slide.clone {
+  opacity: 0; }
+
 .process-wrap {
   background: #FFFFFF; }
 
