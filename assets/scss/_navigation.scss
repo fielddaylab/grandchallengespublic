@@ -84,6 +84,10 @@
   img { width: 25px; }
 }
 
+.subnav .get-involved {
+  display: none;
+}
+
 .subnav, .mainnav {
   height: 70px;
   width: 100%;
@@ -102,7 +106,6 @@
     margin-top: -24px;
     position: absolute;
     right: 10px;
-     display: none;
   }
   .navlogo {
     width: 350px;
@@ -139,7 +142,7 @@
   }
 }
 
-.mainnav{
+.mainnav {
   display: block;
   background:transparent;
   border-bottom:none;

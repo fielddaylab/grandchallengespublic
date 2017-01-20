@@ -2032,6 +2032,9 @@ p, a, li {
   .menu-x img {
     width: 25px; }
 
+.subnav .get-involved {
+  display: none; }
+
 .subnav, .mainnav {
   height: 70px;
   width: 100%;
@@ -2048,8 +2051,7 @@ p, a, li {
     margin-right: 0px;
     margin-top: -24px;
     position: absolute;
-    right: 10px;
-    display: none; }
+    right: 10px; }
   .subnav .navlogo, .mainnav .navlogo {
     width: 350px;
     height: auto;
