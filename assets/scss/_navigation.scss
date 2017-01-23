@@ -107,10 +107,19 @@
     position: absolute;
     right: 10px;
   }
-  .navlogo {
+  .navlogo-link {
     width: 350px;
     height: auto;
     margin-top: -20px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    position: absolute;
+    padding: 0;
+  }
+  .navlogo {
+    width: 100%;
+    height: auto;
     position: absolute;
   }
   a {
@@ -121,7 +130,6 @@
     font-size: .8em;
     font-weight:500;
     letter-spacing: .2em;
-
   }
   &.nav-fixed {
     position: fixed;

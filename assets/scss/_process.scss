@@ -26,15 +26,14 @@
       }
     }
     .process-slide {
-       height: 100%;
-       .singleitem {
+      height: 100%;
+      .singleitem {
         font-size: .9em;
-    color: #fff;
-    width: 27vw;
-    margin-left: 10w;
-    display: inline-block;
-    margin-left: 10vw;
-       }
+        width: 27vw;
+        margin-left: 10w;
+        display: inline-block;
+        margin-left: 10vw;
+      }
       .glide-contain {
         overflow:hidden;
         width:50vw;
@@ -87,6 +86,9 @@
         }
       }
     }
+  }
+  .process-section-bigger {
+    height: 850px;
   }
   .process-nav {
     position: absolute;

@@ -2052,10 +2052,18 @@ p, a, li {
     margin-top: -24px;
     position: absolute;
     right: 10px; }
-  .subnav .navlogo, .mainnav .navlogo {
+  .subnav .navlogo-link, .mainnav .navlogo-link {
     width: 350px;
     height: auto;
     margin-top: -20px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    position: absolute;
+    padding: 0; }
+  .subnav .navlogo, .mainnav .navlogo {
+    width: 100%;
+    height: auto;
     position: absolute; }
   .subnav a, .mainnav a {
     display: inline-block;
@@ -2454,6 +2462,9 @@ p, a, li {
   .footer .footerlogo {
     width: 200px;
     height: auto; }
+  .footer .contact-us {
+    color: white;
+    margin-top: 50px; }
   .footer .footernav {
     list-style: none; }
     .footer .footernav li, .footer .footernav a {
@@ -2722,7 +2733,6 @@ p, a, li {
       height: 100%; }
       .process-content .process-section .process-slide .singleitem {
         font-size: .9em;
-        color: #fff;
         width: 27vw;
         margin-left: 10w;
         display: inline-block;
@@ -2769,6 +2779,8 @@ p, a, li {
           .process-content .process-section .thumb-wrap .process-thumb.thumb.three {
             background: url("../img/background5.jpg");
             background-size: cover; }
+  .process-content .process-section-bigger {
+    height: 850px; }
   .process-content .process-nav {
     position: absolute;
     height: 90%;
