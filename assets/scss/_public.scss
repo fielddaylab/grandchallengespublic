@@ -24,12 +24,24 @@
   }
 }
 
+#whatare {
+  p {
+    font-size: 1.25em;
+  }
+}
+
 .welcome {
   width: 100%;
   height: 50vw;
   position: relative;
   background: $black;
   margin-bottom:10vw;
+  .welcome-header {
+    margin: 10px;
+  }
+  .welcome-blurb {
+    font-size: 14px;
+  }
   .welcome-content {
     @include vertical-align;
   }
@@ -82,23 +94,22 @@
 }
 
 .what-if {
-  position: relative;
-  height: 550px;
-}
-
-.what-if-content {
-  height: 100%;
-  overflow-y: scroll;
-}
-
-.what-if-gradient {
-  pointer-events: none;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: linear-gradient(to bottom, white 5%, rgba(0,0,0,0) 20%, rgba(0,0,0,0) 80%, white 95%);
+  height: 70vh !important;
+  .glide__wrapper {
+    padding-left: 25vw;
+    padding-right: 25vw;
+    width: 100% !important;
+  }
+  .glide__slide {
+    h2 {
+      font-size: 2.5em;
+    }
+    p {
+      padding: 0;
+      margin-bottom: 20px;
+      font-size: 1.3em;
+    }
+  }
 }
 
 .answers-outer {

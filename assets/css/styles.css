@@ -2313,12 +2313,19 @@ p, a, li {
   .mainwrapper .intro {
     padding: 4vw 25vw; }
 
+#whatare p {
+  font-size: 1.25em; }
+
 .welcome {
   width: 100%;
   height: 50vw;
   position: relative;
   background: #222830;
   margin-bottom: 10vw; }
+  .welcome .welcome-header {
+    margin: 10px; }
+  .welcome .welcome-blurb {
+    font-size: 14px; }
   .welcome .welcome-content {
     position: relative;
     top: 50%;
@@ -2364,21 +2371,17 @@ p, a, li {
   margin: 0; }
 
 .what-if {
-  position: relative;
-  height: 550px; }
-
-.what-if-content {
-  height: 100%;
-  overflow-y: scroll; }
-
-.what-if-gradient {
-  pointer-events: none;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: linear-gradient(to bottom, white 5%, transparent 20%, transparent 80%, white 95%); }
+  height: 70vh !important; }
+  .what-if .glide__wrapper {
+    padding-left: 25vw;
+    padding-right: 25vw;
+    width: 100% !important; }
+  .what-if .glide__slide h2 {
+    font-size: 2.5em; }
+  .what-if .glide__slide p {
+    padding: 0;
+    margin-bottom: 20px;
+    font-size: 1.3em; }
 
 .answers-outer {
   width: 100%;
@@ -2708,9 +2711,6 @@ p, a, li {
       outline: none; }
     .glide__bullets > *:hover, .glide__bullets > *:focus {
       border: 4px solid #FFFFFF; }
-
-.glide__slide.clone {
-  opacity: 0; }
 
 .process-wrap {
   background: #FFFFFF; }
