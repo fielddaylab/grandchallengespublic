@@ -13,6 +13,7 @@ README.md
 .sublime-grunt.cache
 node_modules
 rsync-exclude
+yarn.lock
 
 dashboard/data-simple/
 dashboard/data/

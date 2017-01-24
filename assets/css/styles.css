@@ -2364,7 +2364,12 @@ p, a, li {
   margin: 0; }
 
 .what-if {
-  position: relative; }
+  position: relative;
+  height: 550px; }
+
+.what-if-content {
+  height: 100%;
+  overflow-y: scroll; }
 
 .what-if-gradient {
   pointer-events: none;

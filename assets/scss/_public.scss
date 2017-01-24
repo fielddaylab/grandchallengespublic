@@ -83,6 +83,12 @@
 
 .what-if {
   position: relative;
+  height: 550px;
+}
+
+.what-if-content {
+  height: 100%;
+  overflow-y: scroll;
 }
 
 .what-if-gradient {
