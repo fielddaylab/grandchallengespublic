@@ -17,3 +17,5 @@ yarn.lock
 
 dashboard/data-simple/
 dashboard/data/
+
+*.scss

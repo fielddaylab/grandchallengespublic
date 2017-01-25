@@ -16,6 +16,31 @@
       margin-bottom: 40px;
     }
   }
+  .what-if {
+    .glide__wrapper {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .process-nav {
+    display: none;
+  }
+  #connect, #engage, #transform {
+    height: auto;
+    .thumb-wrap {
+      display: none;
+    }
+    .process-slide {
+      width: 95%;
+      float: right;
+      .glide-contain {
+        width: auto;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -57,5 +82,13 @@
   .get-involved {
     position: relative !important;
     margin-top: 10px !important;
+  }
+  .what-if {
+    h2 {
+      font-size: 30px !important;
+    }
+    p {
+      font-size: 14px !important;
+    }
   }
 }

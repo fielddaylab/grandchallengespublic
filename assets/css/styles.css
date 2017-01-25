@@ -2889,7 +2889,23 @@ p, a, li {
       top: 0;
       transform: none;
       -webkit-transform: none;
-      margin-bottom: 40px; } }
+      margin-bottom: 40px; }
+  .what-if .glide__wrapper {
+    padding-left: 5px;
+    padding-right: 5px; } }
+
+@media only screen and (max-width: 1100px) {
+  .process-nav {
+    display: none; }
+  #connect, #engage, #transform {
+    height: auto; }
+    #connect .thumb-wrap, #engage .thumb-wrap, #transform .thumb-wrap {
+      display: none; }
+    #connect .process-slide, #engage .process-slide, #transform .process-slide {
+      width: 95%;
+      float: right; }
+      #connect .process-slide .glide-contain, #engage .process-slide .glide-contain, #transform .process-slide .glide-contain {
+        width: auto; } }
 
 @media only screen and (max-width: 1000px) {
   .hero {
@@ -2919,4 +2935,8 @@ p, a, li {
 @media only screen and (max-width: 638px) {
   .get-involved {
     position: relative !important;
-    margin-top: 10px !important; } }
+    margin-top: 10px !important; }
+  .what-if h2 {
+    font-size: 30px !important; }
+  .what-if p {
+    font-size: 14px !important; } }
