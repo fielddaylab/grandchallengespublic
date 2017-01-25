@@ -2068,7 +2068,7 @@ p, a, li {
   .subnav a, .mainnav a {
     display: inline-block;
     color: #222830;
-    margin: 0px 30px;
+    margin: 0px 15px;
     text-transform: uppercase;
     font-size: .8em;
     font-weight: 500;
@@ -2309,7 +2309,7 @@ p, a, li {
   width: 100%;
   height: auto;
   z-index: 150;
-  overflow-x: hidden; }
+  overflow: hidden; }
   .mainwrapper .intro {
     padding: 4vw 25vw; }
 
@@ -2875,3 +2875,48 @@ p, a, li {
 
 #footer2 a {
   margin: 10px; }
+
+@media only screen and (max-width: 1200px) {
+  .chevron {
+    height: auto;
+    clip-path: none;
+    -webkit-clip-path: none; }
+    .chevron .col.one, .chevron .col.three {
+      display: none; }
+    .chevron .col.two {
+      width: 100%; }
+    .chevron .welcome-content {
+      top: 0;
+      transform: none;
+      -webkit-transform: none;
+      margin-bottom: 40px; } }
+
+@media only screen and (max-width: 1000px) {
+  .hero {
+    height: auto; }
+    .hero .hero-bg {
+      height: auto;
+      padding-bottom: 100px; }
+      .hero .hero-bg .mainlogo {
+        top: 200px;
+        width: 400px;
+        max-width: 90vw; }
+      .hero .hero-bg .hero-frame {
+        display: none; }
+      .hero .hero-bg .scroll {
+        display: none; }
+  .chevron-embelishment {
+    display: none; }
+  .mainnav {
+    height: auto;
+    padding-bottom: 15px; }
+    .mainnav .navitems {
+      margin-left: 0;
+      margin-top: 50px; }
+  .subnav {
+    display: none !important; } }
+
+@media only screen and (max-width: 638px) {
+  .get-involved {
+    position: relative !important;
+    margin-top: 10px !important; } }
