@@ -2371,14 +2371,11 @@ p, a, li {
   margin: 0; }
 
 .what-if {
-  height: 70vh !important; }
-  .what-if .glide__wrapper {
-    padding-left: 25vw;
-    padding-right: 25vw;
-    width: 100% !important; }
-  .what-if .glide__slide h2 {
+  padding: 80px 30px;
+  background-color: white; }
+  .what-if h2 {
     font-size: 2.5em; }
-  .what-if .glide__slide p {
+  .what-if p {
     padding: 0;
     margin-bottom: 20px;
     font-size: 1.3em; }
@@ -2448,6 +2445,8 @@ p, a, li {
     height: auto;
     margin: 0 auto;
     margin-top: 5vw; }
+  .maincta .button {
+    margin-bottom: 10px; }
 
 .footer {
   padding: 8vw;
@@ -2464,8 +2463,8 @@ p, a, li {
       -ms-transform: translateY(-50%);
       transform: translateY(-50%); }
     .footer .partnerlogos img {
-      width: 150px;
-      height: auto;
+      height: 40px;
+      width: auto;
       display: inline-block; }
   .footer .footerlogo {
     width: 200px;
@@ -2483,6 +2482,8 @@ p, a, li {
   height: 65vw;
   position: relative;
   overflow: hidden; }
+  .hero.hero-idea-bank {
+    height: auto; }
   .hero .hero-frame {
     width: 100%;
     height: auto;
@@ -2497,6 +2498,9 @@ p, a, li {
     height: 55vw;
     position: relative;
     background-attachment: fixed; }
+    .hero .hero-bg.hero-bg-idea-bank {
+      background: white;
+      height: auto; }
     .hero .hero-bg .scroll {
       display: inline-block;
       position: absolute;
@@ -2932,6 +2936,11 @@ p, a, li {
   .subnav {
     display: none !important; } }
 
+@media only screen and (max-width: 800px) {
+  .partnerlogos {
+    height: auto !important;
+    padding-top: 25px; } }
+
 @media only screen and (max-width: 638px) {
   .get-involved {
     position: relative !important;
@@ -2939,4 +2948,10 @@ p, a, li {
   .what-if h2 {
     font-size: 30px !important; }
   .what-if p {
-    font-size: 14px !important; } }
+    font-size: 14px !important; }
+  #connect p.singleitem, #engage p.singleitem, #transform p.singleitem {
+    width: 70vw;
+    margin-bottom: 30px;
+    margin-top: 15px; }
+  .contact-us {
+    font-size: 0.8em; } }

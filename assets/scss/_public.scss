@@ -94,21 +94,15 @@
 }
 
 .what-if {
-  height: 70vh !important;
-  .glide__wrapper {
-    padding-left: 25vw;
-    padding-right: 25vw;
-    width: 100% !important;
+  padding: 80px 30px;
+  background-color: white;
+  h2 {
+    font-size: 2.5em;
   }
-  .glide__slide {
-    h2 {
-      font-size: 2.5em;
-    }
-    p {
-      padding: 0;
-      margin-bottom: 20px;
-      font-size: 1.3em;
-    }
+  p {
+    padding: 0;
+    margin-bottom: 20px;
+    font-size: 1.3em;
   }
 }
 
@@ -194,6 +188,9 @@
     margin: 0 auto;
     margin-top: 5vw;
   }
+  .button {
+    margin-bottom: 10px;
+  }
 }
 .footer {
   padding: 8vw;
@@ -207,8 +204,8 @@
       @include vertical-align;
     }
     img {
-      width: 150px;
-      height: auto;
+      height: 40px;
+      width: auto;
       display:inline-block;
     }
   }
