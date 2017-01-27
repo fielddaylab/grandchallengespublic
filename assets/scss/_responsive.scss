@@ -83,6 +83,11 @@
     height: auto !important;
     padding-top: 25px;
   }
+  .mainwrapper {
+    .intro {
+      padding: 15px;
+    }
+  }
 }
 
 @media only screen and (max-width: 638px) {

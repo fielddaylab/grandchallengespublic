@@ -2761,7 +2761,8 @@ p, a, li {
         position: absolute;
         bottom: -25px;
         right: 25vw;
-        display: block; }
+        display: block;
+        z-index: 999; }
     .process-content .process-section .thumb-wrap {
       height: inherit; }
       .process-content .process-section .thumb-wrap .process-thumb {
@@ -2939,7 +2940,9 @@ p, a, li {
 @media only screen and (max-width: 800px) {
   .partnerlogos {
     height: auto !important;
-    padding-top: 25px; } }
+    padding-top: 25px; }
+  .mainwrapper .intro {
+    padding: 15px; } }
 
 @media only screen and (max-width: 638px) {
   .get-involved {
