@@ -45,6 +45,14 @@
       i { color: #fff; }
     }
   }
+  &.gc_blue {
+    color: $gc_blue; border-color: $gc_blue; background: transparent;
+    i { color: $gc_blue; }
+    &:hover, &.filled {
+      background: $gc_blue; color: #fff;
+      i { color: #fff; }
+    }
+  }
   &.light-red {
     color: $light_red; border-color: $light_red; background: transparent;
     i { color: $light_red; }

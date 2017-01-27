@@ -72,13 +72,8 @@
           display: block;
           &.two {
             margin-left:15%;
-            background:url("../img/background4.jpg");
-            background-size: cover;
-          }
-          &.three {
             background:url("../img/background5.jpg");
             background-size: cover;
-
           }
           @include vertical-align;
           -webkit-box-shadow: 0px 0px 36px 1px rgba(0,0,0,0.31);
