@@ -2467,19 +2467,17 @@ p, a, li {
   text-align: center; }
   .footer .partnerlogos {
     margin-top: 3vw;
-    height: 200px;
-    width: 80%;
-    margin: 0 auto; }
-    .footer .partnerlogos .col {
-      position: relative;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%); }
-    .footer .partnerlogos img {
-      height: 40px;
-      width: auto;
-      display: inline-block; }
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .footer .partnerlogos a {
+      margin: 20px;
+      display: block; }
+      .footer .partnerlogos a img {
+        height: 40px;
+        width: auto; }
+        .footer .partnerlogos a img.partnerlogo-big {
+          height: 55px; }
   .footer .footerlogo {
     width: 200px;
     height: auto; }

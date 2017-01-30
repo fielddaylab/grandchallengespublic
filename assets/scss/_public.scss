@@ -197,16 +197,19 @@
   text-align: center;
   .partnerlogos {
     margin-top: 3vw;
-    height:200px;
-    width: 80%;
-    margin: 0 auto;
-    .col {
-      @include vertical-align;
-    }
-    img {
-      height: 40px;
-      width: auto;
-      display:inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    a {
+      margin: 20px;
+      display:block;
+      img {
+        height: 40px;
+        width: auto;
+        &.partnerlogo-big {
+          height: 55px;
+        }
+      }
     }
   }
   .footerlogo {
