@@ -83,15 +83,12 @@
       }
     }
   }
-  .process-section-bigger {
-    height: 850px;
-  }
   .process-nav {
     position: absolute;
     height: 90%;
     width: 2px;
     border: 2px solid #D18916;
-    left: 50vw;
+    left: 50%;
     top: 5%;
     &::before {
     content: "";

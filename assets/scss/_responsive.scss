@@ -28,7 +28,7 @@
   .process-nav {
     display: none;
   }
-  #connect, #engage, #transform {
+  #connect {
     height: auto;
     .thumb-wrap {
       display: none;
@@ -39,6 +39,24 @@
       .glide-contain {
         width: auto;
       }
+    }
+    .glide__wrapper {
+      width: auto !important;
+    }
+  }
+  #transform {
+    height: auto;
+    .thumb-wrap {
+      display: none;
+    }
+    .process-slide {
+      float: right;
+      .glide-contain {
+        width: auto;
+      }
+    }
+    .glide__wrapper {
+      width: auto !important;
     }
   }
 }
@@ -75,6 +93,11 @@
   }
   .subnav {
     display: none !important;
+  }
+  #transform {
+    .process-slide {
+      width: 95%;
+    }
   }
 }
 
