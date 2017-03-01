@@ -2429,7 +2429,7 @@ p, a, li {
         font-size: 12px;
         font-family: 'raleway', sans-serif;
         color: #fff; }
-      .answers-outer .answers .answer p {
+      .answers-outer .answers .answer p, .answers-outer .answers .answer ol {
         overflow-y: hidden;
         height: 0; }
       .answers-outer .answers .answer .answer-arrow {
@@ -2443,7 +2443,7 @@ p, a, li {
       .answers-outer .answers .answer.answer-open h3 {
         background-color: white;
         color: black; }
-      .answers-outer .answers .answer.answer-open p {
+      .answers-outer .answers .answer.answer-open p, .answers-outer .answers .answer.answer-open ol {
         height: auto; }
       .answers-outer .answers .answer.answer-open .answer-arrow {
         transform: rotate(45deg) translateY(3px);
@@ -2773,6 +2773,8 @@ p, a, li {
         margin-bottom: 3px; }
       .process-content .process-section .process-slide p {
         font-size: .9em; }
+      .process-content .process-section .process-slide a {
+        font-size: .9em; }
       .process-content .process-section .process-slide .scroll {
         position: absolute;
         bottom: -25px;
@@ -2799,6 +2801,10 @@ p, a, li {
           -moz-box-shadow: 0px 0px 36px 1px rgba(0, 0, 0, 0.31);
           box-shadow: 0px 0px 36px 1px rgba(0, 0, 0, 0.31); }
           .process-content .process-section .thumb-wrap .process-thumb.thumb.two {
+            margin-left: 15%;
+            background: url("../img/background4.jpg");
+            background-size: cover; }
+          .process-content .process-section .thumb-wrap .process-thumb.thumb.three {
             margin-left: 15%;
             background: url("../img/background5.jpg");
             background-size: cover; }

@@ -145,7 +145,7 @@
                 font-family: 'raleway', sans-serif;
                 color: #fff;
             }
-            p {
+            p, ol {
                 overflow-y: hidden;
                 height: 0;
             }
@@ -163,7 +163,7 @@
                     background-color: white;
                     color: black;
                 }
-                p {
+                p, ol {
                     height: auto;
                 }
                 .answer-arrow {

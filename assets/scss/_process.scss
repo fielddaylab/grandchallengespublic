@@ -50,6 +50,9 @@
       p {
         font-size: .9em;
       }
+      a {
+        font-size: .9em;
+      }
       .scroll {
         position: absolute;
         bottom: -25px;
@@ -71,6 +74,11 @@
           height: 40vw;
           display: block;
           &.two {
+            margin-left:15%;
+            background:url("../img/background4.jpg");
+            background-size: cover;
+          }
+          &.three {
             margin-left:15%;
             background:url("../img/background5.jpg");
             background-size: cover;
