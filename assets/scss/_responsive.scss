@@ -44,6 +44,21 @@
       width: auto !important;
     }
   }
+  #engage {
+    height: auto;
+    .thumb-wrap {
+      display: none;
+    }
+    .process-slide {
+      float: right;
+      .glide-contain {
+        width: auto;
+      }
+    }
+    .glide__wrapper {
+      width: auto !important;
+    }
+  }
   #transform {
     height: auto;
     .thumb-wrap {
@@ -93,6 +108,11 @@
   }
   .subnav {
     display: none !important;
+  }
+  #engage {
+    .process-slide {
+      width: 95%;
+    }
   }
   #transform {
     .process-slide {

@@ -2930,6 +2930,16 @@ p, a, li {
         width: auto; }
     #connect .glide__wrapper {
       width: auto !important; }
+  #engage {
+    height: auto; }
+    #engage .thumb-wrap {
+      display: none; }
+    #engage .process-slide {
+      float: right; }
+      #engage .process-slide .glide-contain {
+        width: auto; }
+    #engage .glide__wrapper {
+      width: auto !important; }
   #transform {
     height: auto; }
     #transform .thumb-wrap {
@@ -2965,6 +2975,8 @@ p, a, li {
       margin-top: 50px; }
   .subnav {
     display: none !important; }
+  #engage .process-slide {
+    width: 95%; }
   #transform .process-slide {
     width: 95%; } }
 
