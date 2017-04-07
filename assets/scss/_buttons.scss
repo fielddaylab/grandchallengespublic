@@ -77,8 +77,8 @@
       i { color: $black; }
     }
   }
-  &.small { min-width: auto; font-size: 11px; padding: 13px 20px; }
-  &.xsmall { min-width: auto; font-size: 10px; padding: 10px 15px; }
+  &.small { min-width: auto; font-size: 12px; padding: 13px 20px; }
+  &.xsmall { min-width: auto; font-size: 11px; padding: 10px 15px; }
   &.full-width { text-align: center; }
   &.round { border-radius: 30px; }
   &[disabled='disabled'] { opacity: 0.5; cursor: not-allowed; }

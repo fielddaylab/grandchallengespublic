@@ -1875,11 +1875,11 @@
         color: #222830; }
   .button.small {
     min-width: auto;
-    font-size: 11px;
+    font-size: 12px;
     padding: 13px 20px; }
   .button.xsmall {
     min-width: auto;
-    font-size: 10px;
+    font-size: 11px;
     padding: 10px 15px; }
   .button.full-width {
     text-align: center; }
@@ -2086,7 +2086,7 @@ p, a, li {
     color: #222830;
     margin: 0px 15px;
     text-transform: uppercase;
-    font-size: .8em;
+    font-size: .9em;
     font-weight: 500;
     letter-spacing: .2em; }
   .subnav.nav-fixed, .mainnav.nav-fixed {
@@ -2426,7 +2426,7 @@ p, a, li {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        font-size: 12px;
+        font-size: 14px;
         font-family: 'raleway', sans-serif;
         color: #fff; }
       .answers-outer .answers .answer p, .answers-outer .answers .answer ol {
@@ -2757,7 +2757,7 @@ p, a, li {
     .process-content .process-section .process-slide {
       height: 100%; }
       .process-content .process-section .process-slide .singleitem {
-        font-size: .9em;
+        font-size: .95em;
         width: 27vw;
         margin-left: 10w;
         display: inline-block;
@@ -2772,9 +2772,9 @@ p, a, li {
         letter-spacing: .05em;
         margin-bottom: 3px; }
       .process-content .process-section .process-slide p {
-        font-size: .9em; }
+        font-size: .95em; }
       .process-content .process-section .process-slide a {
-        font-size: .9em; }
+        font-size: .95em; }
       .process-content .process-section .process-slide .scroll {
         position: absolute;
         bottom: -25px;
