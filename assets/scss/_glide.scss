@@ -280,3 +280,12 @@
 
   &--slideshow {}
 }
+
+.para-arrow {
+  text-align: right;
+  img {
+    transform: rotate(-90deg);
+    width: 45px;
+    margin-right: 20px;
+  }
+}

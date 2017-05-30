@@ -2732,6 +2732,13 @@ p, a, li {
     .glide__bullets > *:hover, .glide__bullets > *:focus {
       border: 4px solid #FFFFFF; }
 
+.para-arrow {
+  text-align: right; }
+  .para-arrow img {
+    transform: rotate(-90deg);
+    width: 45px;
+    margin-right: 20px; }
+
 .process-wrap {
   background: #FFFFFF; }
 
