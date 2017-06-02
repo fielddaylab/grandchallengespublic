@@ -3052,7 +3052,19 @@ p, a, li {
     background: #20272d;
     flex: 1;
     max-width: 800px;
-    border: 4px solid #eee;
-    color: #a1bfd6; }
+    border: 3px solid #eee;
+    color: #a1bfd6;
+    text-align: center; }
+    .curtain-background .curtain .embelishment {
+      width: calc(100% - 100px);
+      margin: 40px 0; }
+    .curtain-background .curtain h1 {
+      font-weight: bold; }
+    .curtain-background .curtain h2 {
+      text-transform: uppercase;
+      margin: 0;
+      color: #a3c1d8; }
+    .curtain-background .curtain p {
+      color: #eee; }
   .curtain-background.curtain-hidden {
     display: none; }
