@@ -1,0 +1,23 @@
+.curtain-background {
+  background: rgba(0,0,0,0.6);
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  .curtain {
+    background: rgb(32,39,45);
+    flex: 1;
+    max-width: 800px;
+    border: 4px solid #eee;
+    color: rgb(161,191,214);
+  }
+  &.curtain-hidden {
+    display: none;
+  }
+}

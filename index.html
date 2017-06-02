@@ -28,11 +28,55 @@
 <script src='assets/js/vendor/buddysystem.jquery.js'></script>
 <script src='assets/js/vendor/glide.js'></script>
 <script src='assets/js/vendor/skrollr.js'></script>
+<script type="text/javascript">
+
+// https://www.quirksmode.org/js/cookies.html
+function createCookie(name,value,days) {
+  if (days) {
+    var date = new Date();
+    date.setTime(date.getTime()+(days*24*60*60*1000));
+    var expires = "; expires="+date.toGMTString();
+  }
+  else var expires = "";
+  document.cookie = name+"="+value+expires+"; path=/";
+}
+function readCookie(name) {
+  var nameEQ = name + "=";
+  var ca = document.cookie.split(';');
+  for(var i=0;i < ca.length;i++) {
+    var c = ca[i];
+    while (c.charAt(0)==' ') c = c.substring(1,c.length);
+    if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+  }
+  return null;
+}
+function eraseCookie(name) {
+  createCookie(name,"",-1);
+}
+
+$(function(){
+  if (readCookie('curtain') !== 'seen') {
+    return; // remove to enable curtain
+    $('.curtain-background').removeClass('curtain-hidden');
+    createCookie('curtain', 'seen', 1000);
+  }
+});
+
+function hideCurtain() {
+  $('.curtain-background').addClass('curtain-hidden');
+}
+</script>
 </head>
 <body>
-<!--<div class="uwheader">
-  <img class="img-responsive" src="assets/img/logo-uwmadison.png">
-</div>-->
+
+<a href="#" onClick="event.preventDefault(); hideCurtain();">
+  <div class="curtain-background curtain-hidden">
+    <div class="curtain">
+      <!-- Curtain content goes here -->
+    </div>
+  </div>
+</a>
+
 <div class="hero">
   <div class="hero-bg" data-top="background-position:0px 0px;"  data-top-bottom="background-position:0px -200px;">
     <navigation class="mainnav">
@@ -258,8 +302,6 @@
     </div>
   </div>
 </div><!--end main wrapper -->
-
-<div class="join-wrapper"></div>
 
 <script>
 var  mn = $(".subnav");
