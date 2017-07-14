@@ -131,6 +131,12 @@
       padding: 15px;
     }
   }
+  .footer-black-row a {
+    display: block;
+  }
+  .footer-white {
+    flex-direction: column;
+  }
 }
 
 @media only screen and (max-width: 638px) {
