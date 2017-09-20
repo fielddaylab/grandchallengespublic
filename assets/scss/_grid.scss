@@ -1,0 +1,256 @@
+
+/* Gridder Game Grid
+--------------------------- */
+.grant-entry {
+  padding-top: 3vw;
+  .grant-participant {
+    display: block;
+    font-family:raleway;
+    line-height: 2em;
+  }
+  p {
+    margin: 20px 0px;
+  }
+  .artist {
+    font-style:italic;
+    color: $gray;
+    margin-bottom: 10px;
+    display: block;
+    a {
+      color: $dark-gold;
+      font-size: 1em;
+    }
+  }
+}
+
+
+.grants {
+ background: $white;
+ padding: 3%;
+ overflow: hidden;
+ @media #{$break-sm}  {
+  padding: 10%;
+ }
+ @media #{$break-xs} {
+  padding: 0vh;
+ }
+}
+
+.gridder{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+.gridder-list{
+    display: inline-block;
+    vertical-align: top;
+    background: #fff;
+    width: 22.1%;
+    margin: 1%;
+    margin-bottom: 2%;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    @media #{$break-md} {
+      width: 29.5%;
+    }
+    @media #{$break-sm} {
+      width: 47%;
+    }
+
+    @media #{$break-xs} {
+      width: 100%;
+    }
+
+    .game-thumbnail {
+      width: 100%;
+      display: block;
+      position: relative;
+      img {
+        transition: all .2s ease-in-out;
+        width: 100%;
+        height: auto;
+      }
+    }
+    .card-summary {
+      padding: 10px 25px 20px 25px;
+      border-bottom: 3px $gray;
+      position: absolute;
+      background:$gold;
+      height:100%;
+      top: 0;
+      left: 0;
+      text-align:center;
+      opacity:0;
+      transition: all .2s ease-in-out;
+      h3 {
+        @include vertical-align;
+        font-size: .8em;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        color: $white;
+        font-family: 'raleway', sans-serif;
+        font-weight:200;
+
+      }
+      p {
+        font-size: 1em;
+        font-weight: 300;
+        min-height: 110px;
+      }
+    }
+    &:hover, &.selectedItem {
+      .card-summary {
+        opacity:1;
+      }
+    }
+    .card-triangle {
+      position: absolute;
+      bottom: -11px;
+      width: 0;
+      height: 0;
+      left: 50%;
+      margin-left:-7px;
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+      border-top: 15px solid $gold;
+      display: block;
+      opacity: 0;
+      transition: all .3s ease-in-out;
+    }
+}
+
+.selectedItem {
+  .card-triangle {
+    opacity: 1;
+  }
+}
+.gridder-navigation {
+
+  position: relative;
+  width: 99%;
+  margin-bottom: 30px;
+  display: block;
+  overflow: hidden;
+  border-top: 1px solid $gold;
+  border-bottom: 1px solid $gold;
+  a {
+    transition: all .1s ease-in-out;
+    font-size: 2em;
+    padding: 10px 10px 10px 12px;
+    background: transparent;
+    &:hover {
+      background: #fff;
+      color: $yellow;
+    }
+  }
+  .nav-left {
+    display: inline-block;
+    float: left;
+    a {
+      border-right: 1px solid $gold;
+      border-left: 1px solid $gold;
+    }
+
+  }
+  .nav-right {
+    display: inline-block;
+    float: right;
+    a:first-child {
+      border-right: 1px solid $gold;
+      border-left: 1px solid $gold;
+    }
+    a:last-child {
+      border-right: 1px solid $gold;
+    }
+  }
+}
+
+.gridder-close {
+  img {
+    width: 25px;
+    height: auto;
+    padding: 3px;
+  }
+}
+
+.gridder-nav {
+  img {
+    width: 35px;
+    height: auto;
+    padding: 3px;
+  }
+}
+
+.gridder-show{
+    display: block;
+    float: left;
+    width: 100%;
+    position: relative;
+}
+.gridder-content{
+  height: 0px; overflow: hidden;
+}
+
+.gridder-expanded-content {
+  text-align: left;
+  width: 92%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  .game-expanded {
+    padding-left: 40px;
+    position: relative;
+    overflow: hidden;
+    height: auto;
+  }
+  .game-info-container {
+    margin: 30px 0px;
+    background: #fff;
+    border-radius: 20px;
+    .game-info {
+      padding: 30px 20px 40px 40px;
+      @media #{$break-md} {
+        padding: 20px 20px 30px 30px;
+      }
+      h4 { margin-bottom: 10px; margin-top: 0px; font-size: 1em; }
+      a { font-size: .9em; }
+      ul { padding-left: 0px; }
+      li {
+        list-style: none;
+        text-indent: 0px;
+        font-weight: 200;
+      }
+
+    }
+  }
+  h3 {
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: .15em;
+    margin: 0px 0px 15px 0px;
+    @media #{$break-sm} {
+      margin-top: 20px;
+    }
+  }
+  p { font-weight: 200; }
+  .game-thumbnail-expanded {
+    overflow: hidden;
+    display: block;
+    position: relative;
+    @media #{$break-md} {
+      height: 150px;
+    }
+    @media #{$break-sm} {
+      display: none;
+    }
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .play-game {
+    font-size: 1.4em;
+    font-weight: 400;
+    letter-spacing: .3em;
+  }
+}

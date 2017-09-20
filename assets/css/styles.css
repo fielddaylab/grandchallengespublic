@@ -1737,6 +1737,9 @@
 .black {
   color: #222830; }
 
+.brown {
+  color: #3C3319; }
+
 .ultralight-gray {
   color: #f5f5f5; }
 
@@ -1949,6 +1952,13 @@ p, a, li {
   font-weight: 700;
   font-size: 3.3em;
   letter-spacing: .05em; }
+
+.big {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 2.3em;
+  letter-spacing: .03em;
+  line-height: 1.5em; }
 
 .small {
   font-size: 0.9em; }
@@ -2249,6 +2259,12 @@ p, a, li {
 
 /* Layout
 ------------------------------------------ */
+.contact-link {
+  margin: 30px; }
+  .contact-link a {
+    color: #D4B000;
+    font-size: 1em; }
+
 .embelishment {
   width: 100%;
   background: #D18916;
@@ -2479,15 +2495,17 @@ p, a, li {
         border-top: 2px solid black;
         border-left: 2px solid black; }
 
+.cta-embelishment {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 5vw;
+  display: block; }
+
 .maincta {
   text-align: center;
   background: #FFFFFF;
   padding: 8vw; }
-  .maincta .cta-embelishment {
-    width: 90%;
-    height: auto;
-    margin: 0 auto;
-    margin-top: 5vw; }
   .maincta .button {
     margin-bottom: 10px; }
 
@@ -3067,3 +3085,220 @@ p, a, li {
       color: #eee; }
   .curtain-background.curtain-hidden {
     display: none; }
+
+/* Gridder Game Grid
+--------------------------- */
+.grant-entry {
+  padding-top: 3vw; }
+  .grant-entry .grant-participant {
+    display: block;
+    font-family: raleway;
+    line-height: 2em; }
+  .grant-entry p {
+    margin: 20px 0px; }
+  .grant-entry .artist {
+    font-style: italic;
+    color: #5A5F6A;
+    margin-bottom: 10px;
+    display: block; }
+    .grant-entry .artist a {
+      color: #D4B000;
+      font-size: 1em; }
+
+.grants {
+  background: #FFFFFF;
+  padding: 3%;
+  overflow: hidden; }
+  @media only screen and (max-width: 768px) {
+    .grants {
+      padding: 10%; } }
+  @media only screen and (max-device-width: 400px), only screen and (max-width: 400px) {
+    .grants {
+      padding: 0vh; } }
+
+.gridder {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none; }
+
+.gridder-list {
+  display: inline-block;
+  vertical-align: top;
+  background: #fff;
+  width: 22.1%;
+  margin: 1%;
+  margin-bottom: 2%;
+  cursor: pointer;
+  transition: all .3s ease-in-out; }
+  @media only screen and (max-width: 1024px) {
+    .gridder-list {
+      width: 29.5%; } }
+  @media only screen and (max-width: 768px) {
+    .gridder-list {
+      width: 47%; } }
+  @media only screen and (max-device-width: 400px), only screen and (max-width: 400px) {
+    .gridder-list {
+      width: 100%; } }
+  .gridder-list .game-thumbnail {
+    width: 100%;
+    display: block;
+    position: relative; }
+    .gridder-list .game-thumbnail img {
+      transition: all .2s ease-in-out;
+      width: 100%;
+      height: auto; }
+  .gridder-list .card-summary {
+    padding: 10px 25px 20px 25px;
+    border-bottom: 3px #5A5F6A;
+    position: absolute;
+    background: #D18916;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    opacity: 0;
+    transition: all .2s ease-in-out; }
+    .gridder-list .card-summary h3 {
+      position: relative;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      font-size: .8em;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      color: #FFFFFF;
+      font-family: 'raleway', sans-serif;
+      font-weight: 200; }
+    .gridder-list .card-summary p {
+      font-size: 1em;
+      font-weight: 300;
+      min-height: 110px; }
+  .gridder-list:hover .card-summary, .gridder-list.selectedItem .card-summary {
+    opacity: 1; }
+  .gridder-list .card-triangle {
+    position: absolute;
+    bottom: -11px;
+    width: 0;
+    height: 0;
+    left: 50%;
+    margin-left: -7px;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid #D18916;
+    display: block;
+    opacity: 0;
+    transition: all .3s ease-in-out; }
+
+.selectedItem .card-triangle {
+  opacity: 1; }
+
+.gridder-navigation {
+  position: relative;
+  width: 99%;
+  margin-bottom: 30px;
+  display: block;
+  overflow: hidden;
+  border-top: 1px solid #D18916;
+  border-bottom: 1px solid #D18916; }
+  .gridder-navigation a {
+    transition: all .1s ease-in-out;
+    font-size: 2em;
+    padding: 10px 10px 10px 12px;
+    background: transparent; }
+    .gridder-navigation a:hover {
+      background: #fff;
+      color: #F0C808; }
+  .gridder-navigation .nav-left {
+    display: inline-block;
+    float: left; }
+    .gridder-navigation .nav-left a {
+      border-right: 1px solid #D18916;
+      border-left: 1px solid #D18916; }
+  .gridder-navigation .nav-right {
+    display: inline-block;
+    float: right; }
+    .gridder-navigation .nav-right a:first-child {
+      border-right: 1px solid #D18916;
+      border-left: 1px solid #D18916; }
+    .gridder-navigation .nav-right a:last-child {
+      border-right: 1px solid #D18916; }
+
+.gridder-close img {
+  width: 25px;
+  height: auto;
+  padding: 3px; }
+
+.gridder-nav img {
+  width: 35px;
+  height: auto;
+  padding: 3px; }
+
+.gridder-show {
+  display: block;
+  float: left;
+  width: 100%;
+  position: relative; }
+
+.gridder-content {
+  height: 0px;
+  overflow: hidden; }
+
+.gridder-expanded-content {
+  text-align: left;
+  width: 92%;
+  margin: 0 auto;
+  margin-bottom: 40px; }
+  .gridder-expanded-content .game-expanded {
+    padding-left: 40px;
+    position: relative;
+    overflow: hidden;
+    height: auto; }
+  .gridder-expanded-content .game-info-container {
+    margin: 30px 0px;
+    background: #fff;
+    border-radius: 20px; }
+    .gridder-expanded-content .game-info-container .game-info {
+      padding: 30px 20px 40px 40px; }
+      @media only screen and (max-width: 1024px) {
+        .gridder-expanded-content .game-info-container .game-info {
+          padding: 20px 20px 30px 30px; } }
+      .gridder-expanded-content .game-info-container .game-info h4 {
+        margin-bottom: 10px;
+        margin-top: 0px;
+        font-size: 1em; }
+      .gridder-expanded-content .game-info-container .game-info a {
+        font-size: .9em; }
+      .gridder-expanded-content .game-info-container .game-info ul {
+        padding-left: 0px; }
+      .gridder-expanded-content .game-info-container .game-info li {
+        list-style: none;
+        text-indent: 0px;
+        font-weight: 200; }
+  .gridder-expanded-content h3 {
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: .15em;
+    margin: 0px 0px 15px 0px; }
+    @media only screen and (max-width: 768px) {
+      .gridder-expanded-content h3 {
+        margin-top: 20px; } }
+  .gridder-expanded-content p {
+    font-weight: 200; }
+  .gridder-expanded-content .game-thumbnail-expanded {
+    overflow: hidden;
+    display: block;
+    position: relative; }
+    @media only screen and (max-width: 1024px) {
+      .gridder-expanded-content .game-thumbnail-expanded {
+        height: 150px; } }
+    @media only screen and (max-width: 768px) {
+      .gridder-expanded-content .game-thumbnail-expanded {
+        display: none; } }
+    .gridder-expanded-content .game-thumbnail-expanded img {
+      width: 100%;
+      height: auto; }
+  .gridder-expanded-content .play-game {
+    font-size: 1.4em;
+    font-weight: 400;
+    letter-spacing: .3em; }

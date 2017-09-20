@@ -1,6 +1,13 @@
 /* Layout
 ------------------------------------------ */
 
+.contact-link {
+  margin: 30px;
+  a {
+    color: $dark-gold;
+    font-size: 1em;
+  }
+}
 .embelishment {
   width: 100%;
   background: $gold;

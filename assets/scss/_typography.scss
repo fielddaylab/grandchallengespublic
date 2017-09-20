@@ -35,6 +35,15 @@ p, a, li {
   letter-spacing: .05em;
 }
 
+.big {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 2.3em;
+  letter-spacing: .03em;
+  line-height:1.5em;
+}
+
+
 .small {
   font-size: 0.9em;
 }
@@ -69,4 +78,3 @@ p, a, li {
     margin-top: 3vw;
   }
 }
-
