@@ -12,6 +12,29 @@
   }
 }
 
+#engageModal {
+  .modal-content{
+    margin-top: 20vh;
+    border:0px;
+    border-radius:0px;
+    .close span {
+      margin-right: -20px;
+      margin-top: -20px;
+    }
+    padding: 3vw 5vw;
+    text-align: center;
+    h2, p {
+      margin-bottom: 3vw;
+    }
+    .engageLink {
+      img {
+        width: 200px;
+        height: auto;
+      }
+    }
+  }
+}
+
 .mainwrapper {
   background: $black url(../img/grain.png) repeat;
   position: relative;

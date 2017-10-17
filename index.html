@@ -23,7 +23,7 @@
 <link rel="stylesheet" href="assets/css/styles.css">
 <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 <script src="assets/js/vendor/jquery-3.0.0.min.js"></script>
-<script src="assets/js/vendor/jquery.gridder.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script><script src="assets/js/vendor/jquery.gridder.js"></script>
 <script src='assets/js/vendor/fastclick.js'></script>
 <script src='assets/js/vendor/buddysystem.jquery.js'></script>
 <script src='assets/js/vendor/glide.js'></script>
@@ -327,8 +327,26 @@ function hideCurtain() {
     </div>
   </footer>
 </div><!--end main wrapper -->
+<!-- Modal -->
+<div class="modal fade in" id="engageModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content contact-modal">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      <h2 class="big brown">Engage Grant
+Winners Announced</h2>
+      <p class="small">Discover how the eight finalists plan to create innovative solutions for critical social and scholarly problems in education, health, and creative expression in Wisconsin and around the world.</p>
+      <a class="engageLink" href="/engage"><img src="assets/img/btn-explorewinners.png"></a>
+    </div>
+  </div>
+</div>
 
 <script>
+$(document).ready(function () {
+    $('#engageModal').modal('show');
+});
+
 var  mn = $(".subnav");
     mns = "nav-fixed";
     hdr = $('.hero').height();

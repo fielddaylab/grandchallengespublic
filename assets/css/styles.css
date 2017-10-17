@@ -2335,6 +2335,21 @@ p, a, li {
     margin: 0 auto;
     display: inline-block; }
 
+#engageModal .modal-content {
+  margin-top: 20vh;
+  border: 0px;
+  border-radius: 0px;
+  padding: 3vw 5vw;
+  text-align: center; }
+  #engageModal .modal-content .close span {
+    margin-right: -20px;
+    margin-top: -20px; }
+  #engageModal .modal-content h2, #engageModal .modal-content p {
+    margin-bottom: 3vw; }
+  #engageModal .modal-content .engageLink img {
+    width: 200px;
+    height: auto; }
+
 .mainwrapper {
   background: #222830 url(../img/grain.png) repeat;
   position: relative;
