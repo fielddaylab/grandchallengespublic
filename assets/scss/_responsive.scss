@@ -78,14 +78,12 @@
 
 @media only screen and (max-width: 1000px) {
   .hero {
-    height: auto;
+    height: 75vw;
     .hero-bg {
-      height: auto;
-      padding-bottom: 100px;
+      height: 75vw;
       .mainlogo {
-        top: 200px;
         width: 400px;
-        max-width: 90vw;
+        margin-top:-40px;
       }
       .hero-frame {
         display: none;
@@ -94,20 +92,6 @@
         display: none;
       }
     }
-  }
-  .chevron-embelishment {
-    display: none;
-  }
-  .mainnav {
-    height: auto;
-    padding-bottom: 15px;
-    .navitems {
-      margin-left: 0;
-      margin-top: 50px;
-    }
-  }
-  .subnav {
-    display: none !important;
   }
   #engage {
     .process-slide {
@@ -122,6 +106,12 @@
 }
 
 @media only screen and (max-width: 800px) {
+  .hero {
+    height: 90vw;
+    .hero-bg {
+      height: 90vw;
+    }
+  }
   .partnerlogos {
     height: auto !important;
     padding-top: 25px;
@@ -140,10 +130,6 @@
 }
 
 @media only screen and (max-width: 638px) {
-  .get-involved {
-    position: relative !important;
-    margin-top: 10px !important;
-  }
   .what-if {
     h2 {
       font-size: 30px !important;
@@ -161,5 +147,16 @@
   }
   .contact-us {
     font-size: 0.8em;
+  }
+}
+
+@media only screen and (max-width:500px) {
+  .mainlogo {
+    width: 350px !important;
+  }
+  .hero { height: 130vw;
+    .hero-bg {
+      height: 130vw;
+    }
   }
 }

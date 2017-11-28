@@ -13,12 +13,17 @@
   margin-bottom: 30px;
 }
 
-.footer-black-row a {
-  color: white;
-  margin: 30px 20px;
-  text-decoration: none;
-  text-transform: uppercase;
+.footer-black-row  {
+  text-align: center;
+  padding-bottom:20px;
+  a {
+    color: white;
+    margin: 30px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
 }
+
 
 .footer-white {
   display: flex;
@@ -33,4 +38,3 @@
   max-height: 80px;
   margin: 50px 0;
 }
-

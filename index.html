@@ -67,7 +67,7 @@ function hideCurtain() {
 }
 </script>
 </head>
-<body>
+<body class="home">
 
 <a href="#" onClick="event.preventDefault(); hideCurtain();">
   <div class="curtain-background curtain-hidden">
@@ -88,6 +88,7 @@ function hideCurtain() {
   <div class="hero-bg" data-top="background-position:0px 0px;"  data-top-bottom="background-position:0px -200px;">
     <navigation class="mainnav">
       <a href="." class="navlogo-link"><img alt="University of Wisconsin presents: Grand Challenges" class="navlogo" src="assets/img/uwgc.png"></a>
+      <a href="." class="mobilenav-link"><img alt="University of Wisconsin presents: Grand Challenges" class="mobilelogo" src="assets/img/uwcrest.png"></a>
       <div class="navitems">
         <a href="/#process">How does it work?</a>
         <a href="engage/">Engage Grants</a>
@@ -95,6 +96,22 @@ function hideCurtain() {
         <a href="https://docs.google.com/document/d/1EJdFQuo4NbQOVzEbvqRlkafO01WRstA8Dwl39WaL7gI/edit" target="_blank">RFP</a>
       </div>
       <a href="dashboard/" class="button xsmall filled gc_blue get-involved">Get Involved</a>
+      <div class="mobile-nav-toggle-wrap">
+        <div class="mobile-nav-container">
+          <div class="content">
+            <img src="assets/img/illustrations/spaceplane-flight.png">
+            <ul class="mobile-links">
+              <li><a href="/#process">How does it work?</a></li>
+              <li><a href="engage/">Engage Grants</a></li>
+              <li><a href="team/">Team</a></li>
+              <li><a href="https://docs.google.com/document/d/1EJdFQuo4NbQOVzEbvqRlkafO01WRstA8Dwl39WaL7gI/edit" target="_blank">RFP</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="nav-toggle">
+          <div class="icon"></div>
+        </div>
+      </div>
     </navigation>
     <img alt="Grand Challenges" class="hero-frame" src="assets/img/hero-frame.png">
     <div class="mainlogo">
@@ -130,17 +147,6 @@ function hideCurtain() {
     </div>
     <div class="col three"></div>
   </div>
-  <navigation class="subnav">
-    <a href="." class="navlogo-link"><img alt="University of Wisconsin presents: Grand Challenges" class="navlogo" src="assets/img/uwgc.png"></a>
-    <div class="navitems">
-      <a href="/#process">How does it work?</a>
-      <a href="engage/">Engage Grants</a>
-      <a href="team/">Team</a>
-      <a href="https://docs.google.com/document/d/1EJdFQuo4NbQOVzEbvqRlkafO01WRstA8Dwl39WaL7gI/edit" target="_blank">RFP</a>
-    </div>
-    <a href="dashboard/" class="button xsmall filled gc_blue get-involved">Get Involved</a>
-  </navigation>
-
   <div id="process" class="intro">
     <div class="centered">
       <img alt="Fancy City Image" class="fancy-city" src="assets/img/fancy-city.png">
@@ -446,6 +452,7 @@ if (Modernizr.touch) {
 
     });
 }
+
 
 
 </script>

@@ -48,6 +48,12 @@
   }
 }
 
+.home .hero {
+  @media #{$break-sm} {
+    padding-bottom: 100px;
+  }
+}
+
 .chevron-embelishment{
   z-index:50;
   transform: translateY(-45px);
