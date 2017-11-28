@@ -199,6 +199,9 @@
     position: absolute;
     z-index: 2;
     list-style: none;
+    @media #{$break-nav} {
+      display:none;
+    }
 
     #{$that}--horizontal & {
       bottom: 8%;
@@ -211,6 +214,9 @@
         right: -0.8vw;
         top: -13vw;
         left: initial;
+          @media #{$break-nav} {
+            left:0vw;
+          }
       }
     }
 
@@ -234,6 +240,11 @@
       transform:translateX(-25px);
       position: absolute;
       transition-duration: 0.25s;
+      @media #{$break-nav} {
+        width:18px;
+        height:18px;
+        display:inline;
+      }
 
       &:nth-child(1) {
         top: 30%;
@@ -287,5 +298,13 @@
     transform: rotate(-90deg);
     width: 45px;
     margin-right: 20px;
+    @media #{$break-nav} {
+      position:absolute;
+      left:45vw;
+      top:11vw;
+    }
+    @media #{$break-xs} {
+      display:none;
+    }
   }
 }

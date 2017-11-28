@@ -160,3 +160,15 @@
     }
   }
 }
+
+.hide-for-small {
+    @media #{$break-sm} {
+      display:none;
+    }
+}
+
+.hide-for-xs {
+    @media #{$break-xs} {
+      display:none;
+    }
+}

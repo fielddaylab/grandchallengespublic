@@ -2989,6 +2989,9 @@ p, a, li {
   position: absolute;
   z-index: 2;
   list-style: none; }
+  @media only screen and (max-device-width: 1100px), only screen and (max-width: 1100px) {
+    .glide__bullets {
+      display: none; } }
   .glide--horizontal .glide__bullets {
     bottom: 8%;
     left: 0vw;
@@ -3000,6 +3003,9 @@ p, a, li {
       right: -0.8vw;
       top: -13vw;
       left: initial; }
+      @media only screen and (max-device-width: 1100px), only screen and (max-width: 1100px) {
+        .glide--horizontal .glide__bullets.right {
+          left: 0vw; } }
   .glide--vertical .glide__bullets {
     top: 45%;
     right: 8%;
@@ -3019,6 +3025,11 @@ p, a, li {
     transform: translateX(-25px);
     position: absolute;
     transition-duration: 0.25s; }
+    @media only screen and (max-device-width: 1100px), only screen and (max-width: 1100px) {
+      .glide__bullets > * {
+        width: 18px;
+        height: 18px;
+        display: inline; } }
     .glide__bullets > *:nth-child(1) {
       top: 30%; }
     .glide__bullets > *:nth-child(2) {
@@ -3048,6 +3059,14 @@ p, a, li {
     transform: rotate(-90deg);
     width: 45px;
     margin-right: 20px; }
+    @media only screen and (max-device-width: 1100px), only screen and (max-width: 1100px) {
+      .para-arrow img {
+        position: absolute;
+        left: 45vw;
+        top: 11vw; } }
+    @media only screen and (max-device-width: 400px), only screen and (max-width: 400px) {
+      .para-arrow img {
+        display: none; } }
 
 .process-wrap {
   background: #FFFFFF; }
@@ -3073,6 +3092,9 @@ p, a, li {
         margin-left: 10%; }
     .process-content .process-section .process-slide {
       height: 100%; }
+      @media only screen and (max-device-width: 1100px), only screen and (max-width: 1100px) {
+        .process-content .process-section .process-slide {
+          padding-bottom: 5vw; } }
       .process-content .process-section .process-slide .singleitem {
         font-size: .95em;
         width: 27vw;
@@ -3083,7 +3105,7 @@ p, a, li {
         overflow: hidden;
         width: 50vw; }
       .process-content .process-section .process-slide .slide-title {
-        margin-left: 20%;
+        margin-left: 10%;
         margin-top: 7vw; }
       .process-content .process-section .process-slide h3 {
         letter-spacing: .05em;
@@ -3317,6 +3339,14 @@ p, a, li {
     height: 130vw; }
     .hero .hero-bg {
       height: 130vw; } }
+
+@media only screen and (max-width: 768px) {
+  .hide-for-small {
+    display: none; } }
+
+@media only screen and (max-device-width: 400px), only screen and (max-width: 400px) {
+  .hide-for-xs {
+    display: none; } }
 
 .curtain-background {
   background: rgba(0, 0, 0, 0.6);

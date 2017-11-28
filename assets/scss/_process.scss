@@ -27,6 +27,9 @@
     }
     .process-slide {
       height: 100%;
+      @media #{$break-nav} {
+        padding-bottom: 5vw;
+      }
       .singleitem {
         font-size: .95em;
         width: 27vw;
@@ -40,7 +43,7 @@
       }
 
       .slide-title {
-        margin-left:20%;
+        margin-left:10%;
         margin-top:7vw;
       }
       h3{
