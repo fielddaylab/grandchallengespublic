@@ -3235,7 +3235,7 @@ p, a, li {
   max-height: 80px;
   margin: 50px 0; }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1300px) {
   .chevron {
     height: auto;
     clip-path: none;
