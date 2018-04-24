@@ -3359,8 +3359,10 @@ p, a, li {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: row; }
+  flex-direction: row;
+  cursor: pointer; }
   .curtain-background .curtain {
+    cursor: auto;
     background: #20272d;
     flex: 1;
     max-width: 800px;

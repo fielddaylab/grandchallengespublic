@@ -10,7 +10,9 @@
   align-items: center;
   justify-content: center;
   flex-direction: row;
+  cursor: pointer;
   .curtain {
+    cursor: auto;
     background: rgb(32,39,45);
     flex: 1;
     max-width: 800px;

@@ -56,7 +56,7 @@ function eraseCookie(name) {
 
 $(function(){
   if (readCookie('curtain') !== 'seen') {
-    return; // remove to enable curtain
+    // return; // remove to enable curtain
     $('.curtain-background').removeClass('curtain-hidden');
     createCookie('curtain', 'seen', 1000);
   }
@@ -69,20 +69,20 @@ function hideCurtain() {
 </head>
 <body class="home">
 
-<a href="#" onClick="event.preventDefault(); hideCurtain();">
-  <div class="curtain-background curtain-hidden">
-    <div class="curtain">
-      <span class="embelishment"></span>
-      <p class="small">UW-Madison School of Education Grand Challenges present a Meet-Up to discuss:</p>
-      <h1 class="caps">Rural Education &amp; Healthcare</h1>
-      <h2>Skyview Room, Fluno Center</h2>
-      <h2>May 24, 2017</h2>
-      <h2>6:30-8:30PM</h2>
-      <p>Make new connections. Engage in conversation. Share your work.</p>
-      <span class="embelishment"></span>
-    </div>
+<div class="curtain-background curtain-hidden" onClick="event.preventDefault(); hideCurtain();">
+  <div class="curtain" onClick="event.preventDefault(); event.stopPropagation();">
+    <span class="embelishment"></span>
+    <h1>
+      Transform Grant Awards Announced
+    </h1>
+    <h2>
+      <a href="transform/" onClick="event.stopPropagation();">
+        View the grants
+      </a>
+    </h2>
+    <span class="embelishment"></span>
   </div>
-</a>
+</div>
 
 <div class="hero">
   <div class="hero-bg" data-top="background-position:0px 0px;"  data-top-bottom="background-position:0px -200px;">
