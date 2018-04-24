@@ -55,10 +55,10 @@ function eraseCookie(name) {
 }
 
 $(function(){
-  if (readCookie('curtain') !== 'seen') {
+  if (readCookie('curtain') !== 'seen2') {
     // return; // remove to enable curtain
     $('.curtain-background').removeClass('curtain-hidden');
-    createCookie('curtain', 'seen', 1000);
+    createCookie('curtain', 'seen2', 1000);
   }
 });
 
