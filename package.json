@@ -1,21 +1,21 @@
 {
-  "name": "the-yard",
+  "name": "grand-challenges",
   "version": "1.0.0",
-  "description": "website for the yard games",
+  "description": "website for grand challenges",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/fielddaylab/the-yard.git"
+    "url": "https://github.com/fielddaylab/grandchallengespublic.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/fielddaylab/the-yard/issues"
+    "url": "https://github.com/fielddaylab/grandchallengespublic/issues"
   },
-  "homepage": "https://github.com/fielddaylab/the-yard",
+  "homepage": "https://github.com/fielddaylab/grandchallengespublic",
   "devDependencies": {
     "browser-sync": "^2.13.0",
     "gulp": "^3.9.1",
