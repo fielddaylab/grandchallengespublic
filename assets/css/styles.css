@@ -3449,9 +3449,10 @@ p, a, li {
     border-bottom: 3px #5A5F6A;
     position: absolute;
     background: #D18916;
-    height: 100%;
     top: 0;
     left: 0;
+    bottom: 0;
+    right: 0;
     text-align: center;
     opacity: 0;
     transition: all .2s ease-in-out; }
