@@ -44,6 +44,22 @@
       width: auto !important;
     }
   }
+  #seed {
+    height: auto;
+    .thumb-wrap {
+      display: none;
+    }
+    .process-slide {
+      width: 95%;
+      float: right;
+      .glide-contain {
+        width: auto;
+      }
+    }
+    .glide__wrapper {
+      width: auto !important;
+    }
+  }
   #engage {
     height: auto;
     .thumb-wrap {
@@ -138,7 +154,7 @@
       font-size: 14px !important;
     }
   }
-  #connect, #engage, #transform {
+  #connect, #seed, #engage, #transform {
     p.singleitem {
       width: 70vw;
       margin-bottom: 30px;
