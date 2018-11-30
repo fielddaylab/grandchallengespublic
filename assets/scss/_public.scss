@@ -282,3 +282,17 @@
     }
   }
 }
+
+.seed-content {
+  background-color: $white;
+  color: $black;
+  padding: 25px;
+  text-align: center;
+  p {
+    margin: 20px;
+  }
+  img {
+    max-width: 80vw;
+    margin: 20px;
+  }
+}
