@@ -3144,7 +3144,7 @@ p, a, li {
         height: 50vw;
         position: relative; }
         .process-content .process-section .thumb-wrap .process-thumb.thumb {
-          background: url("../img/background3.jpg");
+          background: url("../img/background10.jpg");
           background-size: cover;
           width: 85%;
           height: 40vw;
@@ -3158,15 +3158,15 @@ p, a, li {
           -moz-box-shadow: 0px 0px 36px 1px rgba(0, 0, 0, 0.31);
           box-shadow: 0px 0px 36px 1px rgba(0, 0, 0, 0.31); }
           .process-content .process-section .thumb-wrap .process-thumb.thumb.two {
-            background: url("../img/background4.jpg");
+            background: url("../img/background9.jpg");
             background-size: cover; }
           .process-content .process-section .thumb-wrap .process-thumb.thumb.three {
             margin-left: 15%;
-            background: url("../img/background5.jpg");
+            background: url("../img/background7.jpg");
             background-size: cover; }
           .process-content .process-section .thumb-wrap .process-thumb.thumb.four {
             margin-left: 15%;
-            background: url("../img/background2.jpg");
+            background: url("../img/background8.jpg");
             background-size: cover; }
   .process-content .process-nav {
     position: absolute;
