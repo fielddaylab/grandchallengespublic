@@ -2810,6 +2810,8 @@ p, a, li {
   .seed-content img {
     max-width: 80vw;
     margin: 20px; }
+  .seed-content h2 {
+    font-family: Halis R Bold; }
 
 .hero {
   width: 100%;
