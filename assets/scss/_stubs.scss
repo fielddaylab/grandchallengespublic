@@ -3,6 +3,8 @@
   flex-direction: row;
   align-items: stretch;
   .ticket-stub {
+    display: flex;
+    flex-direction: column;
     flex: 1;
     margin: 10px;
     background: white;
