@@ -1,3 +1,3 @@
-First `git submodule init`.
-Then `make build` to build, `make deploy` to upload to the site.
-Requires `npm`, `gulp`, and `composer`.
+  1. Install `sass` and `composer`
+  2. `git submodule init`
+  3. `make build` to build, `make deploy` to upload to the server

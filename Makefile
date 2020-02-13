@@ -6,8 +6,7 @@ list:
 	@echo "  make deploy"
 
 build:
-	npm install
-	gulp styles
+	sass assets/scss/styles.scss assets/css/styles.css
 	git submodule update
 	cd dashboard && make
 
